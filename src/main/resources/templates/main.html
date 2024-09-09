@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagle</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="resultCanvas"></canvas>
+        <canvas id="inputCanvas" style="display: none;"></canvas>
+        <canvas id="tempCanvas" style="display: none;"></canvas>
+    </div>
+    <div class="header-buttons">
+        <!-- <button id="loginButton">Entrar</button> -->
+        <button id="signupButton">Entrar / Cadastrar</button>
+    </div>
+    <div class="text-and-button-container">
+        <div class="text-container">
+            <div class="text-box" id="text1"></div>
+            <div class="text-box" id="text2"></div>
+            <div class="text-box" id="text3"></div>
+            <div class="text-box" id="text4"></div>
+            <div class="text-box" id="text5"></div>
+
+            <input type="text" id="editableText" placeholder="Digite aqui...">
+
+            <div id="suggestions-container" class="autocomplete-suggestions"></div>
+
+            <div class="errorMessage" id="errorMessage"></div>
+        </div>
+        <div class="button-container">
+            <button id="actionButton">Jogar</button>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

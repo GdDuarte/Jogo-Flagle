@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.action-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.action-container label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #049617;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button#update-btn {
+    background-color: #28a745;
+}
+
+button#update-btn:hover {
+    background-color: #218838;
+}
+
+button#delete-btn {
+    background-color: #dc3545;
+}
+
+button#delete-btn:hover {
+    background-color: #c82333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.read-section {
+    max-height: 400px; /* Set a fixed height for the container */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Add a border to the container */
+    padding: 10px; /* Optional: Add padding inside the container */
+}
+
+#usersTable {
+    width: 100%; /* Make the table take up the full width of the container */
+    border-collapse: collapse; /* Optional: Collapse borders to remove double borders */
+}
+
+#usersTable th, #usersTable td {
+    padding: 8px; /* Add padding to table cells */
+    border-bottom: 1px solid #ddd; /* Add a bottom border to table cells */
+}
+
+#rowDeleteButton {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #aa0c0c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#rowEditButton {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#rowSessionButton {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #080bc2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detailsButton {
+    background-color: #049617;
+}
+
+.detailsButton:hover {
+    background-color: #036310;
+}

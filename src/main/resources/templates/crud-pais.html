@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Países</title>
+    <link rel="stylesheet" href="/css/crud-pais.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gerenciar Países</h1>
+    <div class="content-wrapper">
+        <section class="read-section">
+            <h2>Lista de Países</h2>
+            <table id="countriesTable">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Dia Jogado</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-section">
+            <h2>Editar País</h2>
+            <form id="updateCountryForm">
+                <label for="id_pais">ID:</label>
+                <input type="text" id="edit_country_id" name="country_id" required>
+
+                <label for="edit_nome_pais">Nome:</label>
+                <input type="text" id="edit_nome_pais" name="nome_pais" required>
+
+                <button type="submit" id="botaoEditar">Editar</button>
+            </form>
+        </section>
+
+        <section class="report-section">
+            <h2>Relatórios</h2>
+            <form id="reportForm">
+                <label for="reportType">Selecionar Tipo de Relatório:</label>
+                <select id="reportType" name="reportType">
+                    <option value="mostPlayed">Países Mais Jogados</option>
+                    <option value="mostAccurate">Países Mais Acertados</option>
+                </select>
+                <button type="submit" id="generateReport">Gerar</button>
+            </form>
+        </section>
+    </div>
+</div>
+<script src="/js/crud-pais.js"></script>
+</body>
+</html>

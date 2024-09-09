@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="/css/crud-usuario.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gerenciar Usuários</h1>
+
+    <section class="form-section">
+        <h2>Adicionar Novo Usuário</h2>
+        <form id="createUserForm">
+            <label for="nome_usuario">Nome:</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="hash_senha">Senha:</label>
+            <input type="text" id="hash_senha" name="hash_senha" required>
+
+            <button type="submit" id="addButton">Adicionar</button>
+        </form>
+    </section>
+
+    <section class="read-section">
+        <h2>Lista de Usuários</h2>
+        <table id="usersTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="form-section">
+        <h2>Editar Usuário</h2>
+        <form id="updateUserForm">
+            <label for="id_usuario">ID:</label>
+            <input type="text" id="edit_user_id" name="user_id" required>
+
+            <label for="edit_nome_usuario">Nome:</label>
+            <input type="text" id="edit_nome_usuario" name="nome_usuario" required>
+
+            <label for="edit_email">E-mail:</label>
+            <input type="email" id="edit_email" name="email" required>
+
+            <button type="submit" id="botaoEditar">Editar</button>
+        </form>
+    </section>
+    <section class="report-section">
+        <h2>Relatórios</h2>
+        <form id="reportForm">
+            <label for="reportType">Selecionar Tipo de Relatório:</label>
+            <select id="reportType" name="reportType">
+                <option value="mostPlayed">Usuários Mais Jogadas</option>
+                <!-- <option value="mostAccurate">Países Mais Acertados</option> -->
+            </select>
+            <button type="submit" id="generateReport">Gerar</button>
+        </form>
+    </section>
+</div>
+<script src="/js/crud-usuario.js"></script>
+</body>
+</html>
